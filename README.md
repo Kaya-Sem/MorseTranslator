@@ -1,2 +1,2 @@
-How to use:
-build in IDEA
+*How to use:*
+`build in IDEA`
