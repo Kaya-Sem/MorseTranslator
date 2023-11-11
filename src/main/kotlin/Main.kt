@@ -23,7 +23,7 @@ fun textToMorse(text: String): String {
         if (it == ' ') {
             "/"
         } else {
-            morseCodeMap.getOrDefault(it, "")
+            morseCodeMap[it] ?: ""  // Use ?: to provide a default value for null
         }
     }
     return morseCodeList.joinToString(" ")
@@ -48,3 +48,4 @@ fun main() {
     }
 
 }
+
