@@ -18,7 +18,7 @@ fun morseToText(morseCode: String): String {
 }
 
 fun textToMorse(text: String): String {
-    val upperCaseText = text.toUpperCase()
+    val upperCaseText = text.uppercase()
     val morseCodeList = upperCaseText.map {
         if (it == ' ') {
             "/"
@@ -29,11 +29,11 @@ fun textToMorse(text: String): String {
     return morseCodeList.joinToString(" ")
 }
 
-fun main(args: Array<String>) {
+fun main() {
 
     while(true){
         println("Enter text or Morse code:")
-        val input = readLine() ?: run {
+        val input = readlnOrNull() ?: run {
             println("Error: Unable to read input.")
             exitProcess(1)
         }
@@ -44,7 +44,7 @@ fun main(args: Array<String>) {
             textToMorse(input)
         }
 
-        println("Translated: ${translatedText.toLowerCase()}")
+        println("Translated: ${translatedText.lowercase()}")
     }
 
 }
