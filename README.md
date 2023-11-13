@@ -1,5 +1,5 @@
-A *kotlin* CLI morse translator.
-It translates morsecode into plain text, and plain text into morsecode!
+# A *kotlin* CLI morse translator.
+# It translates morsecode into plain text, and plain text into morsecode!
 
 **How to use**
 4. You can download the latest package in the packages section
